@@ -47,9 +47,9 @@ class CompanyController extends Controller
         $subject = "Invitation to Join as Admin For " . $dataCompany->name;
         $message = url('/invite/' . $send_invite->password_token);
         // Mail Code 
-        // dispatch(function() use ($to, $subject, $message){
+        dispatch(function() use ($to, $subject, $message){
             Mail::to($to)->send(new InviteMail($subject,$message));
-        // })->delay(now()->addSeconds(5));
+        })->delay(now()->addSeconds(5));
 
         return redirect()->route('dashboard')->with('success', 'Company created successfully!');
     }
