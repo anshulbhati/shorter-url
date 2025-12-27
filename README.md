@@ -8,7 +8,8 @@ Welcome Laravel Url Generator File
 
 step 1:
 
-clone project Using Git 
+    clone project Using Git 
+    https://github.com/anshulbhati/shorter-url.git
 
 step 2:
     Create .env file 
@@ -26,25 +27,25 @@ step 2:
 
     #change also session in env file
     SESSION_DRIVER=file
-step 3
+step 3:
     Composer install for vendor Folder dependancy
     run: composer install
-step 4 
+step 4: 
     insert database in Mysql Folder  And Super Admin And ROleSeeder
     php artisan migrate --seed
-step 6 
+step 6: 
     run project run command behind for mail without delay both command are required
     run : php artisan serve
     run : php artisan queue:listen
-
-I'm Using in this project 
-1.migration for create a schema 
-2.seeder for create superadmin credentails
-3.middleware for project route And Authentication 
-4 Authentication for user authentic or not 
-5 gates for Authrization 
-6 Mail for Invite
-7 Queue for Without Delay the mail
+What I'm Using In this Project:
+    I'm Using in this project 
+    1.migration for create a schema 
+    2.seeder for create superadmin credentails
+    3.middleware for project route And Authentication 
+    4 Authentication for user authentic or not 
+    5 gates for Authrization 
+    6 Mail for Invite
+    7 Queue for Without Delay the mail
 
 Help chatGpt For Debug if i'm facing any bug mostly bug type spelling mistakes,for Small UI
 help Bootstrap for UI
