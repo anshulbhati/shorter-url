@@ -41,9 +41,10 @@ npm install
 npm run build
 ```
 
-4. Database
+4. Database With Dummy Record 
 ```bash
 php artisan migrate --seed
+php artisan db:seed --class=DummyDataSeeder
 ```
 
 5. Run app and queue

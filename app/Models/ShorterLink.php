@@ -3,9 +3,11 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class ShorterLink extends Model
 {
+    use HasFactory;
     protected $table = 'shorter_links';
     protected $guarded = [];
     public $timestamps = true;
